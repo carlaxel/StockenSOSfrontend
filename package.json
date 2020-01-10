@@ -3,13 +3,24 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "bootstrap": "^4.3.1",
+    "history": "^4.10.1",
     "react": "^16.9.0",
+    "react-bootstrap": "^1.0.0-beta.14",
+    "react-burger-menu": "^2.6.11",
     "react-dom": "^16.9.0",
-    "react-scripts": "3.1.2"
+    "react-gtm-module": "^2.0.8",
+    "react-helmet": "^5.2.1",
+    "react-router-dom": "^5.1.1",
+    "react-scripts": "3.1.2",
+    "react-stripe-elements": "^5.0.1",
+    "reactjs-popup": "^1.5.0"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
+    "deploytest": "scp -rp ./build/* webserver:/var/www/test.stockensos.se/",
+    "deploy": "scp -rp ./build/* webserver:/var/www/stockensos.se/",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
@@ -27,5 +38,9 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "proxy": "http://localhost:8888",
+  "devDependencies": {
+    "dotenv": "^8.2.0"
   }
 }

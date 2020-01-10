@@ -1,0 +1,24 @@
+.Social {
+  display: flex;
+  justify-content: center;
+}
+
+.socialLink {
+  width: 3rem;
+  margin: 1rem 1rem;
+  max-width: 20%;
+  transition: transform 1s;
+}
+.socialLink:hover {
+  transition: transform 1s;
+  transform: rotate(1080deg);
+  transform: scale(1.2);
+}
+
+.Icon {
+  transition: transform 1s;
+}
+.Icon:hover {
+  transition: transform 1s;
+  transform: rotate(360deg);
+}

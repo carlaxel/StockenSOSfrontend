@@ -1,0 +1,17 @@
+.Registration {
+  background-color: #f8f9fa; /* fallback color */
+  display: flex;
+  justify-content: center;
+  font-family: "Roboto", sans-serif;
+  min-height: 100vh;
+}
+
+.Main {
+  background-color: #f8f9fa; /* fallback color */
+  min-height: 100%;
+  width: 900px;
+  max-width: 90%;
+  display: flex;
+  flex-direction: column;
+  font-family: "Roboto", sans-serif;
+}

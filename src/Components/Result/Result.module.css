@@ -1,0 +1,31 @@
+.Background {
+  background-color: #f8f9fa; /* fallback color */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  min-height: 100vh;
+}
+
+.Main {
+  max-width: 900px;
+  min-width: 90%;
+  padding: 5em 0;
+}
+
+.Select {
+  display: flex;
+  margin-left: 3rem;
+  margin-bottom: 3rem;
+}
+
+.Item {
+  margin-bottom: 0.35rem;
+  font-size: 1.1rem;
+  color: #212529;
+}
+
+.id {
+  min-width: 4rem;
+}

@@ -1,0 +1,40 @@
+.Main {
+  display: flex;
+  flex-direction: column;
+  background-color: #f8f9fa;
+  padding: 2rem 0;
+}
+
+.MainCenter {
+  width: 750px;
+  align-self: center;
+}
+
+@media (max-width: 800px) {
+  .MainCenter {
+    max-width: 90%;
+  }
+}
+
+.P,
+.Li {
+  font-family: "SF Pro Text", "SF Pro Icons", "Helvetica Neue", "Helvetica",
+    "Arial", sans-serif;
+  font-size: 1.1rem;
+  line-height: 1.4;
+  color: #262626;
+  text-align: left;
+}
+
+.Li {
+  font-size: 1rem;
+  justify-self: flex-start;
+  max-width: 80%;
+}
+
+.H2 {
+  font-family: "SF Pro Text", "SF Pro Icons", "Helvetica Neue", "Helvetica",
+    "Arial", sans-serif;
+  line-height: 1.4;
+  color: #262626;
+}

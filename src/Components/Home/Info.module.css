@@ -1,0 +1,61 @@
+.Info {
+  background-color: lightcoral;
+  display: flex;
+  flex-direction: column;
+  padding: 2rem 0;
+}
+.InfoCenter {
+  width: 750px;
+  align-self: center;
+}
+
+@media (max-width: 800px) {
+  .InfoCenter {
+    max-width: 90%;
+  }
+}
+
+.map {
+  float: right;
+  margin: 2rem;
+  height: 400px;
+  width: 400px;
+  border-radius: 200px;
+  transition: 2s;
+}
+
+.map:hover {
+  transition: 1s;
+  transform: scale(1.08);
+}
+
+@media (max-width: 800px) {
+  .map {
+    float: none;
+    margin: 2rem;
+    max-width: 70%;
+    height: auto;
+    border-radius: 100%;
+  }
+}
+
+.P {
+  font-family: "SF Pro Text", "SF Pro Icons", "Helvetica Neue", "Helvetica",
+    "Arial", sans-serif;
+  font-size: 1.05rem;
+  line-height: 1.4;
+  text-align: left;
+}
+
+.H2 {
+  font-family: "SF Pro Text", "SF Pro Icons", "Helvetica Neue", "Helvetica",
+    "Arial", sans-serif;
+  line-height: 1.4;
+  color: #262626;
+}
+.H3 {
+  font-family: "SF Pro Text", "SF Pro Icons", "Helvetica Neue", "Helvetica",
+    "Arial", sans-serif;
+  line-height: 1.4;
+  color: #262626;
+}

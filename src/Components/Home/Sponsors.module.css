@@ -1,0 +1,36 @@
+.Sponsors {
+  background-color: #303846;
+  min-height: 400px;
+  padding: 2rem 0;
+}
+
+.H2 {
+  font-family: "SF Pro Text", "SF Pro Icons", "Helvetica Neue", "Helvetica",
+    "Arial", sans-serif;
+  line-height: 1.4;
+  color: rgb(9, 211, 172);
+  display: inline-block;
+}
+.sponsors {
+  display: flex;
+  flex-wrap: wrap;
+}
+.sponsorBox {
+  display: inline-flex;
+  background-color: white;
+  height: 150px;
+  padding: 0 10px;
+  margin: 5px 5px;
+}
+.sponsorImg {
+  width: 200px;
+  height: auto;
+  object-fit: contain;
+}
+
+.main_sponsorImg {
+  width: 300px;
+  padding: 0 20px;
+  height: auto;
+  object-fit: contain;
+}
