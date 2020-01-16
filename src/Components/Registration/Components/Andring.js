@@ -232,7 +232,7 @@ export default function Andring() {
               className={styles.formControl}
               name="phone1"
               onChange={handleChange}
-              type="number"
+              type="tel"
               value={form.phone1}
             ></input>
           </div>
@@ -242,7 +242,7 @@ export default function Andring() {
               className={styles.formControl}
               name="phone2"
               onChange={handleChange}
-              type="number"
+              type="tel"
               value={form.phone2}
             ></input>
           </div>

@@ -68,6 +68,13 @@ function CheckoutForm(props) {
           },
           body: JSON.stringify({ email: props.finalForm.email1 })
         });
+        if (secret.status !== 200) {
+          setPaymentError({
+            bool: true,
+            message: "Fel i email format"
+          });
+          return;
+        }
         secret = await secret.json();
         console.log("secret: " + secret);
         setSecret(secret);
@@ -94,10 +101,14 @@ function CheckoutForm(props) {
     return (
       <div className={styles.Complete}>
         <h1>Köp genomfört</h1>
-        <p>Välkommen till Stocken SOS, vi ses den 18 Juli</p>
+        <p>Grattis du har nu köpt plats på Stocken SOS 2020!</p>
         <p>
-          Bekräftelse email har skickats till {props.finalForm.email1} och{" "}
-          {props.finalForm.email2}{" "}
+          Ett mail med bekräftelse har skickats till {props.finalForm.email1}{" "}
+          och {props.finalForm.email2}. I mailet finns en länk som du kan
+          använda om du behöver ändra dina uppgifter innan loppet. Någon vecka
+          innan loppet kommer vi maila dig en banguide med detaljerad
+          information om bansträckningen. Glöm nu inte att förbereda dig
+          ordentligt. Lycka till!{" "}
         </p>
       </div>
     );

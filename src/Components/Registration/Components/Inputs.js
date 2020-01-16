@@ -349,7 +349,7 @@ export default function Inputs(props) {
           </div>
           <div className={styles.InputElement}>
             <label className={styles.label} htmlFor="city1">
-              Stad Deltagare 1
+              Postort Deltagare 1
             </label>
             <input
               className={styles.formControl}
@@ -398,7 +398,7 @@ export default function Inputs(props) {
           </div>
           <div className={styles.InputElement}>
             <label className={styles.label} htmlFor="city2">
-              Stad Deltagare 2
+              Postort Deltagare 2
             </label>
             <input
               className={styles.formControl}

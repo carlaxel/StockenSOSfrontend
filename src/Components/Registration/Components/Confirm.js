@@ -49,7 +49,7 @@ export default function Confirm(props) {
   if (props.knatte) {
     return (
       <div className={styles.Confirm}>
-        <h2>Bekräfta värden</h2>
+        <h2>Bekräftelse</h2>
         {Object.keys(props.finalForm).map(input => (
           <div key={input}>
             <label style={{ margin: "0.3rem", fontWeight: "bold" }}>
@@ -72,28 +72,29 @@ export default function Confirm(props) {
               <p>
                 {" "}
                 Anmälan görs på hemsidan genom att ange personuppgifter samt
-                betala in startavgiften. Begränsat antal löpare, först till
-                kvarn gäller. Startavgiften är 500 kr per löpare i lång- och
-                mellandistanserna. Knattedistansen är gratis (men deltagare
-                måste anmälas till johan.kyllerman@awx.se). För minderåriga
-                (under 18 år) vill vi ha målsmans medgivande att deltaga. Din
-                anmälan kommer inte att godkännas förrän startavgiften är
-                inbetald. Vi kan inte återbetala outnyttjade startavgifter, så
-                om du skulle få förhinder ber vi dig att hitta en ersättare som
-                kan ta din plats. Viktigt i så fall att kontakta oss så vi kan
-                uppdatera startlistan med rätt personuppgifter. För att hantera
-                ändringar i efterhand kommer vi att ta ut en administrativ
-                avgift på 50 kr.
+                betala startavgift. Din anmälan kommer inte att godkännas förrän
+                startavgiften är betalad. Startavgiften är 500 kr per löpare i
+                lång- och mellandistanserna. Knattedistansen är gratis och
+                deltagare anmäls till johan.kyllerman@gmail.com. För deltagare
+                under 18 år vill vi ha målsmans medgivande.
               </p>
               <p>
-                Vi tar emot anmälningar löpande och antal och platser är
-                begränsade. Först till kvarn gäller, vi reserverar oss för
-                slutförsäljning. Pga högt intresse har vi tidigarelagt deadline
-                för anmälan till senast 15 juli.
+                Vi kan inte återbetala outnyttjade startavgifter. Får du
+                förhinder ber vi dig hitta en ersättare vars personuppgifter ska
+                registreras via länken i bekräftelsemailet du fick vid
+                anmälningstillfället. Ändring av storlek på t-shirt kan göras
+                senast 1 Juli. Sista anmälan är 15 juli
               </p>
+              <h5>Hantering av personuppgifter</h5>
               <p>
-                Vi lagrar de uppgifter som du handahåller oss i formulär, era
-                uppgifter kommer ej att användas för syften utanför Stocken SOS.
+                Sommarträning på Stocken är arrangör av Stocken SOS och samlar
+                in födelsedatum och kontaktinformation från samtliga deltagare
+                för att kunna informera om loppet samt skicka erbjudanden om
+                framtida lopp och produkter från våra sponsorer. Dina
+                personuppgifter kommer endast behandlas av organisationsteamet
+                och speciellt utsedda funktionärer. Genom att anmäla dig till
+                Stocken SOS och betala in startavgiften samtycker du till att vi
+                behandlar dina personuppgifter i enlighet med ovan.
               </p>
             </Popup>
           </label>
@@ -117,7 +118,7 @@ export default function Confirm(props) {
   }
   return (
     <div className={styles.Confirm}>
-      <h2>Bekräfta värden</h2>
+      <h2>Bekräftelse</h2>
       {Object.keys(props.finalForm).map(input => (
         <div key={input}>
           <label style={{ margin: "0.3rem", fontWeight: "bold" }}>
@@ -141,28 +142,29 @@ export default function Confirm(props) {
               <p>
                 {" "}
                 Anmälan görs på hemsidan genom att ange personuppgifter samt
-                betala in startavgiften. Begränsat antal löpare, först till
-                kvarn gäller. Startavgiften är 500 kr per löpare i lång- och
-                mellandistanserna. Knattedistansen är gratis (men deltagare
-                måste anmälas till johan.kyllerman@awx.se). För minderåriga
-                (under 18 år) vill vi ha målsmans medgivande att deltaga. Din
-                anmälan kommer inte att godkännas förrän startavgiften är
-                inbetald. Vi kan inte återbetala outnyttjade startavgifter, så
-                om du skulle få förhinder ber vi dig att hitta en ersättare som
-                kan ta din plats. Viktigt i så fall att kontakta oss så vi kan
-                uppdatera startlistan med rätt personuppgifter. För att hantera
-                ändringar i efterhand kommer vi att ta ut en administrativ
-                avgift på 50 kr.
+                betala startavgift. Din anmälan kommer inte att godkännas förrän
+                startavgiften är betalad. Startavgiften är 500 kr per löpare i
+                lång- och mellandistanserna. Knattedistansen är gratis och
+                deltagare anmäls till johan.kyllerman@gmail.com. För deltagare
+                under 18 år vill vi ha målsmans medgivande.
               </p>
               <p>
-                Vi tar emot anmälningar löpande och antal och platser är
-                begränsade. Först till kvarn gäller, vi reserverar oss för
-                slutförsäljning. Pga högt intresse har vi tidigarelagt deadline
-                för anmälan till senast 15 juli.
+                Vi kan inte återbetala outnyttjade startavgifter. Får du
+                förhinder ber vi dig hitta en ersättare vars personuppgifter ska
+                registreras via länken i bekräftelsemailet du fick vid
+                anmälningstillfället. Ändring av storlek på t-shirt kan göras
+                senast 1 Juli. Sista anmälan är 15 juli
               </p>
+              <h4>Hantering av personuppgifter</h4>
               <p>
-                Vi lagrar de uppgifter som du handahåller oss i formulär, era
-                uppgifter kommer ej att användas för syften utanför Stocken SOS.
+                Sommarträning på Stocken är arrangör av Stocken SOS och samlar
+                in födelsedatum och kontaktinformation från samtliga deltagare
+                för att kunna informera om loppet samt skicka erbjudanden om
+                framtida lopp och produkter från våra sponsorer. Dina
+                personuppgifter kommer endast behandlas av organisationsteamet
+                och speciellt utsedda funktionärer. Genom att anmäla dig till
+                Stocken SOS och betala in startavgiften samtycker du till att vi
+                behandlar dina personuppgifter i enlighet med ovan.
               </p>
             </React.Fragment>
           </Popup>

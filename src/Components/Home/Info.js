@@ -94,7 +94,7 @@ function Info(props) {
           startavgiften. Begränsat antal löpare, först till kvarn gäller.
           Startavgiften är 500 kr per löpare i lång- och mellandistanserna.
           Knattedistansen är gratis (men deltagare måste anmälas till
-          johan.kyllerman@awx.se). För minderåriga (under 18 år) vill vi ha
+          johan.kyllerman@gmail.com). För minderåriga (under 18 år) vill vi ha
           målsmans medgivande att deltaga. Din anmälan kommer inte att godkännas
           förrän startavgiften är inbetald. Vi kan inte återbetala outnyttjade
           startavgifter, så om du skulle få förhinder ber vi dig att hitta en
