@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import { pageviewGA } from "../GA";
 import styles from "./Registration.module.css";
 import Inputs from "./Components/Inputs";
 import Confirm from "./Components/Confirm";
@@ -30,6 +31,10 @@ export default function Registration(props) {
   });
   const [stage, setStage] = useState("input");
   const [allowReg, setAllowReg] = useState(true);
+
+  useEffect(() => {
+    pageviewGA();
+  }, []);
 
   useEffect(() => {
     let today = new Date();

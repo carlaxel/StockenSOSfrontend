@@ -1,12 +1,12 @@
-import React from "react";
+import React, { Suspense } from "react";
 import { Helmet } from "react-helmet";
 import styles from "./Home.module.css";
 import Header from "./Header";
 import Main from "./Main";
 //import ImagesComponent from "./ImagesComponent";
 import Info from "./Info";
-import Sponsors from "./Sponsors";
 import Social from "./Social";
+const Sponsors = React.lazy(() => import("./Sponsors"));
 
 export default function Home(props) {
   return (
@@ -21,7 +21,9 @@ export default function Home(props) {
       <Main />
       {/*<ImagesComponent />*/}
       <Info />
-      <Sponsors />
+      <Suspense fallback={<div>Loading...</div>}>
+        <Sponsors />
+      </Suspense>
       <Social />
     </div>
   );

@@ -1,6 +1,8 @@
 import React, { useEffect, useState } from "react";
 import { Switch, Route, NavLink } from "react-router-dom";
 import { slide as Menu } from "react-burger-menu";
+import { initGA, pageviewGA } from "./Components/GA";
+
 import styles from "./App.module.css";
 import Home from "./Components/Home/Home";
 import Registration from "./Components/Registration/Registration";
@@ -8,23 +10,25 @@ import Result2019 from "./Components/Result/Result2019";
 import Result2020 from "./Components/Result/Result2020";
 import Andring from "./Components/Registration/Components/Andring";
 
+//UA-156655216-1
 import MenuStyles from "./App.css.js";
 
 function App(props) {
+  useEffect(() => {
+    initGA();
+    pageviewGA();
+  }, []);
+
   const [menuOpen, setMenuOpen] = useState(false);
   const [viewResult, setViewResult] = useState(false);
 
   useEffect(() => {
     let today = new Date();
-    let raceFinished = new Date("Sat Jul 23 2020 16:00:00 GMT+0100");
+    let raceFinished = new Date("Sat Jul 18 2020 16:00:00 GMT+0100");
     if (today - raceFinished > 0) {
       setViewResult(true);
     }
   }, []);
-
-  function handleChange() {
-    console.log("change");
-  }
 
   function handleClose() {
     console.log("test");
@@ -34,7 +38,7 @@ function App(props) {
 
   return (
     <React.Fragment>
-      <Menu isOpen={menuOpen} onStateChange={handleChange} styles={MenuStyles}>
+      <Menu styles={MenuStyles}>
         <NavLink to="/" className={styles.HeaderButton}>
           Hem
         </NavLink>

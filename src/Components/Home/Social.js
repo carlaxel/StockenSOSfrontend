@@ -9,18 +9,24 @@ function Social(props) {
   return (
     <div className={styles.Social}>
       <a
+        alt="facebook länk"
         className={styles.socialLink}
         href="https://www.facebook.com/StockenSOS/"
       >
         <Facebook className={styles.Icon} />
       </a>
       <a
+        alt="Instagram länk"
         className={styles.socialLink}
         href="https://www.instagram.com/stockensos/"
       >
         <Instagram className={styles.Icon} />
       </a>
-      <a className={styles.socialLink} href="https://twitter.com">
+      <a
+        alt="Twitter länk"
+        className={styles.socialLink}
+        href="https://twitter.com"
+      >
         <Twitter className={styles.Icon} />
       </a>
       {/*<Youtube className={styles.Icon} />*/}
