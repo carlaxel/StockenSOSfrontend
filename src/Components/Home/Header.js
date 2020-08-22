@@ -8,7 +8,7 @@ function Header(props) {
 
   useEffect(() => {
     let today = new Date();
-    let raceFinished = new Date("Sat Jul 18 2020 10:00:00 GMT+0100");
+    let raceFinished = new Date("Sat Jul 16 2021 10:00:00 GMT+0100");
     if (today - raceFinished > 0) {
       setAllowReg(false);
     }
@@ -24,7 +24,7 @@ function Header(props) {
   return (
     <div className={`${styles.Header} ${styles.shadow}`}>
       <div className={`${styles.HeaderBox}`}>
-        <h1 className={`${styles.H1}`}>Stocken SOS 2020</h1>
+        <h1 className={`${styles.H1}`}>Stocken SOS 2021</h1>
         <p className={styles.BreadText}>
           För fjärde året arrangerar vi Stocken Spring och Sim, loppet där alla
           är välkomna . Vi springer och simmar i en fantastisk natur på Orusts
@@ -36,13 +36,13 @@ function Header(props) {
         <div className={styles.anmalanDiv}>
           {allowReg ? (
             <Link to="/registration" className={styles.AnmalanButton}>
-              Anmälan
+              Anmälan 2021
             </Link>
           ) : (
-            <Link className={styles.AnmalanButtonClosed}>Anmälan</Link>
+            <Link className={styles.AnmalanButtonClosed}>Anmälan 2021</Link>
           )}
 
-          <h4>18 Juli 13:00</h4>
+          <h4 className={styles.H4}>17 Juli 13:00</h4>
         </div>
       </div>
     </div>

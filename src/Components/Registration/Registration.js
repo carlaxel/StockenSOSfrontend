@@ -38,7 +38,7 @@ export default function Registration(props) {
 
   useEffect(() => {
     let today = new Date();
-    let raceFinished = new Date("Sat Jul 16 2020 05:00:00 GMT+0100");
+    let raceFinished = new Date("Sat Jul 17 2021 05:00:00 GMT+0100");
     if (today - raceFinished > 0) {
       setAllowReg(false);
     }

@@ -10,7 +10,6 @@ export default function Result2020(props) {
     async function init() {
       let runners = await fetch("/api-2020/runners/getAll");
       runners = await runners.json();
-      console.log(runners);
       setRunners(runners);
     }
     init();

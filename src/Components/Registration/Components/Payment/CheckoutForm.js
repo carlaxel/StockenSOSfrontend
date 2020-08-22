@@ -11,13 +11,13 @@ function CheckoutForm(props) {
       fontSmoothing: "antialiased",
       fontSize: "16px",
       "::placeholder": {
-        color: "#aab7c4"
-      }
+        color: "#aab7c4",
+      },
     },
     invalid: {
       color: "#fa755a",
-      iconColor: "#fa755a"
-    }
+      iconColor: "#fa755a",
+    },
   };
 
   const [state, setState] = useState({ complete: false });
@@ -25,7 +25,7 @@ function CheckoutForm(props) {
   const [element, setElement] = useState({});
   const [paymentError, setPaymentError] = useState({
     bool: false,
-    message: ""
+    message: "",
   });
   async function submit(e) {
     const { paymentIntent, error } = await props.stripe.handleCardPayment(
@@ -43,17 +43,18 @@ function CheckoutForm(props) {
     fetch("/api-v1/done", {
       method: "POST",
       headers: {
-        "Content-Type": "application/json"
+        "Content-Type": "application/json",
         // 'Content-Type': 'application/x-www-form-urlencoded',
       },
-      body: JSON.stringify({ INTENT: paymentIntent, reg_data: props.finalForm })
+      body: JSON.stringify({
+        INTENT: paymentIntent,
+        reg_data: props.finalForm,
+      }),
     });
 
     setState({ complete: true });
-    console.log("Purchase Complete!");
   }
   function handleReady(element) {
-    console.log(element);
     setElement(element);
   }
 
@@ -63,25 +64,24 @@ function CheckoutForm(props) {
         let secret = await fetch("/api-v1/init", {
           method: "POST",
           headers: {
-            "Content-Type": "application/json"
+            "Content-Type": "application/json",
             // 'Content-Type': 'application/x-www-form-urlencoded',
           },
-          body: JSON.stringify({ email: props.finalForm.email1 })
+          body: JSON.stringify({ email: props.finalForm.email1 }),
         });
         if (secret.status !== 200) {
           setPaymentError({
             bool: true,
-            message: "Fel i email format"
+            message: "Fel i email format",
           });
           return;
         }
         secret = await secret.json();
-        console.log("secret: " + secret);
         setSecret(secret);
       } catch (e) {
         setPaymentError({
           bool: true,
-          message: "Kan inte kontakta server, försök igen senare"
+          message: "Kan inte kontakta server, försök igen senare",
         });
       }
     }

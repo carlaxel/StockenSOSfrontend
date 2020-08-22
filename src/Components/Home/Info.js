@@ -16,12 +16,12 @@ function Info(props) {
         <h2 className={styles.H2}>Allt du behöver veta</h2>
         <h3 className={styles.H3}>Info om loppen</h3>
         <p className={styles.P}>
-          <b>Tävlingsdatum:</b> Lördag den 18 juli 2020.
+          <b>Tävlingsdatum:</b> Lördag den 17 juli 2021.
         </p>
         <p className={styles.P}>
           Vi tar emot anmälningar löpande, först till kvarn gäller och vi
           reserverar oss för slutförsäljning då vi har max 300 platser att
-          erbjuda. Sista anmälningsdag är 15 juli.
+          erbjuda. Sista anmälningsdag är 14 juli.
         </p>
         <p className={styles.P}>
           <b>Starttider:</b> Långa 13:00, Mellan 14.00 och Knatte 15.00
@@ -61,7 +61,7 @@ function Info(props) {
         </p>
         <h3 className={styles.H3}>Bansträckning</h3>
         <p className={styles.P}>
-          Inför 2020 kommer vi att göra några justeringar som vi i dialog med
+          Inför 2021 kommer vi att göra några justeringar som vi i dialog med
           löpare, funktionärer och sponsorer hoppas kommer göra upplevelsen än
           mer spektakulär. Banguider mailas ut några dagar innan start till den
           mailadress som uppgetts i anmälan.
@@ -103,7 +103,7 @@ function Info(props) {
           ändringar i efterhand kommer vi att ta ut en administrativ avgift på
           50 kr. Vi tar emot anmälningar löpande och kan välkomna max 300
           deltagare. Först till kvarn gäller, vi reserverar oss för
-          slutförsäljning. Sista anmälningsdag är 15 juli.
+          slutförsäljning. Sista anmälningsdag är 14 juli.
         </p>
         <h3 className={styles.H3}>Registrering</h3>
         <p className={styles.P}>

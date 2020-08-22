@@ -4,6 +4,7 @@
   background-image: url(../assets/images/newStocken.jpg);
   background-position: center center;
   background-repeat: no-repeat;
+  background-size: cover;
   height: 900px;
   display: flex;
   flex-direction: column;
@@ -44,11 +45,12 @@
   color: white;
   font-size: 2.3rem;
   height: 40px;
-  width: 200px;
+  width: 300px;
   max-width: 40%;
   border: none;
   border-radius: 10px;
   transition: 400ms 200ms;
+  font-weight: 100;
 }
 
 .AnmalanButton:hover {
@@ -64,40 +66,69 @@
   color: white;
   font-size: 2.3rem;
   height: 40px;
-  width: 200px;
+  width: 300px;
   max-width: 40%;
   border: none;
   border-radius: 10px;
   transition: 400ms 200ms;
+  font-weight: 100;
 }
 
-@media (max-width: 400px) {
+@media (max-width: 600px) {
   .AnmalanButton {
     font-size: 1.8rem;
+    max-width: 65%;
+    font-weight: 300;
+  }
+  .AnmalanButtonClosed {
+    font-size: 1.8rem;
+    max-width: 65%;
+    font-weight: 300;
   }
 }
 
 .H1 {
   font-size: 4rem;
   color: white;
+  font-weight: 300;
 }
 @media (max-width: 600px) {
   .H1 {
     margin-top: 5rem;
     font-size: 3rem;
-    color: white;
+    font-weight: 400;
   }
 }
 
 .BreadText {
   color: white;
   font-size: 1.1rem;
-  font-weight: 900;
+  font-weight: 400;
   margin-bottom: 0;
 }
-h4 {
+
+@media (max-width: 600px) {
+  .BreadText {
+    color: white;
+    font-size: 1.1rem;
+    font-weight: 500;
+    margin-bottom: 0;
+  }
+  
+}
+
+.H4 {
   color: white;
+  font-weight: 300;
   margin-top: 1rem;
   font-size: 2rem;
-  font-weight: bolder;
+}
+
+@media (max-width: 600px) {
+  .H4 {
+    color: white;
+    font-weight: 400;
+    margin-top: 1rem;
+    font-size: 2rem;
+  }
 }

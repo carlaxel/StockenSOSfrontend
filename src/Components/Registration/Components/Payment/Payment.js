@@ -11,7 +11,7 @@ function Payment(props) {
     return <Knatte finalForm={props.finalForm} />;
   }
   return (
-    <StripeProvider apiKey="pk_live_oG30GNDfTNjEmvQFQQ48gqjc00wnMqsRLu">
+    <StripeProvider apiKey={process.env.REACT_APP_STRIPE}>
       <div className={styles.Payment}>
         <Checkout finalForm={props.finalForm} />
         <img className={styles.logo} src={StockenImg} alt="Stocken logo"></img>
