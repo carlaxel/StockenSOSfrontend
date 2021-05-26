@@ -8,18 +8,11 @@ function Header(props) {
 
   useEffect(() => {
     let today = new Date();
-    let raceFinished = new Date("Sat Jul 16 2021 10:00:00 GMT+0100");
-    if (today - raceFinished > 0) {
+    let raceFinished = new Date("Sat Jul 16 2021 16:00:00 GMT+0200");
+    if (today > raceFinished) {
       setAllowReg(false);
     }
   }, []);
-
-  const [fake, setFake] = useState(0);
-  useEffect(() => {
-    if (fake === 2) {
-      setFake(3);
-    }
-  }, [fake]);
 
   return (
     <div className={`${styles.Header} ${styles.shadow}`}>

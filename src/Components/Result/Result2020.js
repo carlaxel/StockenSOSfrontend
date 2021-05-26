@@ -8,8 +8,10 @@ export default function Result2020(props) {
 
   useEffect(() => {
     async function init() {
-      let runners = await fetch("/api-2020/runners/getAll");
+      let runners = await fetch("/api-2021/runners/getAll");
+      console.log(runners);
       runners = await runners.json();
+      console.log(runners);
       setRunners(runners);
     }
     init();

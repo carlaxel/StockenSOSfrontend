@@ -21,7 +21,7 @@ function Info(props) {
         <p className={styles.P}>
           Vi tar emot anmälningar löpande, först till kvarn gäller och vi
           reserverar oss för slutförsäljning då vi har max 300 platser att
-          erbjuda. Sista anmälningsdag är 14 juli.
+          erbjuda. Sista anmälningsdag är 16 juli.
         </p>
         <p className={styles.P}>
           <b>Starttider:</b> Långa 13:00, Mellan 14.00 och Knatte 15.00
