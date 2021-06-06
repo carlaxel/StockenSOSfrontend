@@ -1,4 +1,4 @@
-import React, { useState, Suspense } from "react";
+import React, { Suspense } from "react";
 import { Helmet } from "react-helmet";
 import styles from "./Home.module.css";
 import Header from "./Header";

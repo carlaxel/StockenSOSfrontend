@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { CardElement, injectStripe } from "react-stripe-elements";
-import TagManager from "react-gtm-module";
+// import TagManager from "react-gtm-module";
 import styles from "./CheckoutForm.module.css";
 
 function CheckoutForm(props) {
