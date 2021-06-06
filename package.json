@@ -5,16 +5,16 @@
   "dependencies": {
     "env-cmd": "^10.0.1",
     "history": "^4.10.1",
-    "react": "^16.9.0",
-    "react-bootstrap": "^1.0.0-beta.14",
+    "react": "^16.14.0",
+    "react-bootstrap": "^1.6.1",
     "react-burger-menu": "^2.6.11",
-    "react-dom": "^16.13.1",
-    "react-ga": "^2.7.0",
+    "react-dom": "^16.14.0",
+    "react-ga": "^3.3.0",
     "react-gtm-module": "^2.0.8",
     "react-helmet": "^5.2.1",
-    "react-router-dom": "^5.1.1",
-    "react-scripts": "^3.3.0",
-    "react-stripe-elements": "^5.0.1",
+    "react-router-dom": "^5.2.0",
+    "react-scripts": "^4.0.3",
+    "react-stripe-elements": "^6.1.2",
     "reactjs-popup": "^1.5.0"
   },
   "scripts": {
@@ -45,7 +45,7 @@
   },
   "proxy": "http://localhost:8888",
   "devDependencies": {
-    "cypress": "^3.8.1",
+    "cypress": "^7.4.0",
     "dotenv": "^8.2.0"
   }
 }
