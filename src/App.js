@@ -55,7 +55,7 @@ function App(props) {
       </Menu>
       <Switch>
         {viewResult && (
-          <Route path="/result2020">
+          <Route path="/result2021">
             <Result2021 />
           </Route>
         )}

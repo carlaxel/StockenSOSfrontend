@@ -101,7 +101,7 @@ function CheckoutForm(props) {
     return (
       <div className={styles.Complete}>
         <h1>Köp genomfört</h1>
-        <p>Grattis du har nu köpt plats på Stocken SOS 2020!</p>
+        <p>Grattis du har nu köpt plats på Stocken SOS 2021!</p>
         <p>
           Ett mail med bekräftelse har skickats till {props.finalForm.email1}{" "}
           och {props.finalForm.email2}. I mailet finns en länk som du kan
