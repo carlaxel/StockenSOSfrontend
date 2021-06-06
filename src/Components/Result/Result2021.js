@@ -3,7 +3,7 @@ import { Helmet } from "react-helmet";
 import Result from "./Result";
 import styles from "./Result.module.css";
 
-export default function Result2020(props) {
+export default function Result2021(props) {
   const [runners, setRunners] = useState([]);
 
   useEffect(() => {
@@ -22,7 +22,7 @@ export default function Result2020(props) {
       <Helmet>
         <title>Stocken SOS</title>
 
-        <link rel="canonical" href="https://stockensos.se/result2020" />
+        <link rel="canonical" href="https://stockensos.se/result2021" />
         <meta name="robots" content="index, nofollow" />
       </Helmet>
       <Result runners={runners} />

@@ -7,7 +7,7 @@ import styles from "./App.module.css";
 import Home from "./Components/Home/Home";
 import Registration from "./Components/Registration/Registration";
 import Result2019 from "./Components/Result/Result2019";
-import Result2020 from "./Components/Result/Result2020";
+import Result2021 from "./Components/Result/Result2021";
 import Andring from "./Components/Registration/Components/Andring";
 
 //UA-156655216-1
@@ -42,8 +42,8 @@ function App(props) {
           Hem
         </NavLink>
         {viewResult && (
-          <NavLink to="/result2020" className={styles.HeaderButton}>
-            Resultat 2020
+          <NavLink to="/result2021" className={styles.HeaderButton}>
+            Resultat 2021
           </NavLink>
         )}
         <NavLink to="/result2019" className={styles.HeaderButton}>
@@ -56,7 +56,7 @@ function App(props) {
       <Switch>
         {viewResult && (
           <Route path="/result2020">
-            <Result2020 />
+            <Result2021 />
           </Route>
         )}
         <Route onClick={handleClose} path="/result2019">
