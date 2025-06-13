@@ -11,26 +11,37 @@
   color: rgb(9, 211, 172);
   display: inline-block;
 }
+
 .sponsors {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
+  padding: 0 1rem;
 }
+
 .sponsorBox {
   display: inline-flex;
   background-color: white;
   height: 150px;
   padding: 0 10px;
-  margin: 5px 5px;
+  margin: 6px;
+  border-radius: 12px;
+  overflow: hidden;
+  transition: transform 0.2s ease;
 }
+
+.sponsorBox:hover {
+  transform: translateY(-3px);
+}
+
 .sponsorImg {
   width: 200px;
   height: auto;
   object-fit: contain;
+  border-radius: 8px;
 }
 
 .main_sponsorImg {
-  width: 300px;
-  padding: 0 20px;
-  height: auto;
-  object-fit: contain;
+  height: 200px;
+  border-radius: 8px;
 }

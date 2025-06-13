@@ -1,40 +1,106 @@
 .Button {
-  font-size: 1.5rem;
+  font-size: 1.1rem;
+  font-weight: 600;
   color: #fff !important;
   text-transform: uppercase;
   text-decoration: none;
-  background: #007bff;
-  padding: 20px;
-  border-radius: 5px;
+  background: #2563eb;
+  padding: 1rem 2rem;
+  border-radius: 8px;
   display: inline-block;
   border: none;
-  transition: all 0.4s ease 0s;
+  transition: all 0.2s ease;
+  cursor: pointer;
+  margin-top: 2rem;
+  width: 100%;
 }
 
 .Button:hover {
-  background: #434343;
-  letter-spacing: 1px;
-  -webkit-box-shadow: 0px 5px 40px -10px rgba(0, 0, 0, 0.57);
-  -moz-box-shadow: 0px 5px 40px -10px rgba(0, 0, 0, 0.57);
-  box-shadow: 5px 40px -10px rgba(0, 0, 0, 0.57);
-  transition: all 0.4s ease 0s;
+  background: #1d4ed8;
+  transform: translateY(-1px);
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+}
+
+.Button:disabled {
+  background: #94a3b8;
+  cursor: not-allowed;
 }
 
 .Checkout {
-  margin-top: 8rem;
-  display: flex;
+  margin: 4rem auto;
+  padding: 2rem;
   width: 500px;
-  align-items: center;
   max-width: 90%;
+  display: flex;
   flex-direction: column;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  position: relative;
 }
+
+.Checkout > div:not(.Complete):not(.PaymentError):not(.LoadingOverlay) {
+  padding: 1rem;
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+  background-color: #f8fafc;
+  width: 100%;
+  box-sizing: border-box;
+}
+
 .Complete {
-  margin-top: 4rem;
+  margin: 2rem 0;
+  padding: 2rem;
   display: flex;
   flex-direction: column;
   align-items: center;
+  text-align: center;
+  background: #f0fdf4;
+  border-radius: 8px;
+  border: 1px solid #86efac;
+}
+
+.Complete h2 {
+  color: #166534;
+  margin-bottom: 1rem;
 }
 
 .PaymentError {
-  color: red;
+  color: #dc2626;
+  background: #fef2f2;
+  border: 1px solid #fecaca;
+  border-radius: 8px;
+  padding: 1rem;
+  margin: 1rem 0;
+  font-size: 0.9rem;
+}
+
+
+
+/* Loading State */
+.LoadingOverlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(255, 255, 255, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 12px;
+}
+
+.LoadingSpinner {
+  width: 40px;
+  height: 40px;
+  border: 3px solid #f3f3f3;
+  border-top: 3px solid #2563eb;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
 }

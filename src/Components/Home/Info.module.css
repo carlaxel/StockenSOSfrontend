@@ -1,61 +1,95 @@
 .Info {
-  background-color: lightcoral;
+  background-color: #ff9a9e;
   display: flex;
   flex-direction: column;
-  padding: 2rem 0;
-}
-.InfoCenter {
-  width: 750px;
-  align-self: center;
+  padding: 4rem 0;
 }
 
-@media (max-width: 800px) {
+.InfoCenter {
+  width: 850px;
+  align-self: center;
+  background-color: rgba(255, 255, 255, 0.95);
+  padding: 3rem;
+  border-radius: 12px;
+  box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width: 900px) {
   .InfoCenter {
     max-width: 90%;
+    padding: 2rem;
   }
 }
 
 .map {
   float: right;
-  margin: 2rem;
+  margin: 0 0 2rem 2rem;
   height: 400px;
   width: 400px;
-  border-radius: 200px;
-  transition: 2s;
+  border-radius: 12px;
+  transition: transform 0.3s ease;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+  border: 3px solid #007AFF;
 }
 
 .map:hover {
-  transition: 1s;
-  transform: scale(1.08);
+  transform: scale(1.03);
 }
 
 @media (max-width: 800px) {
   .map {
     float: none;
-    margin: 2rem;
-    max-width: 70%;
+    margin: 2rem auto;
+    max-width: 100%;
     height: auto;
-    border-radius: 100%;
+    border-radius: 12px;
   }
 }
 
 .P {
   font-family: "SF Pro Text", "SF Pro Icons", "Helvetica Neue", "Helvetica",
     "Arial", sans-serif;
-  font-size: 1.05rem;
-  line-height: 1.4;
+  font-size: 1.1rem;
+  line-height: 1.6;
   text-align: left;
+  color: #4a4a4a;
+  margin-bottom: 1.5rem;
+}
+
+.P a {
+  color: #007AFF;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.P a:hover {
+  color: #0056b3;
+  text-decoration: underline;
+}
+
+.P b {
+  color: #1a1a1a;
+  font-weight: 600;
 }
 
 .H2 {
   font-family: "SF Pro Text", "SF Pro Icons", "Helvetica Neue", "Helvetica",
     "Arial", sans-serif;
-  line-height: 1.4;
-  color: #262626;
+  font-size: 2.5rem;
+  line-height: 1.2;
+  color: #1a1a1a;
+  margin-bottom: 2rem;
+  font-weight: 700;
 }
+
 .H3 {
   font-family: "SF Pro Text", "SF Pro Icons", "Helvetica Neue", "Helvetica",
     "Arial", sans-serif;
-  line-height: 1.4;
-  color: #262626;
+  font-size: 1.8rem;
+  line-height: 1.3;
+  color: #2a2a2a;
+  margin: 3rem 0 1.5rem;
+  font-weight: 600;
+  border-bottom: 2px solid rgba(42, 42, 42, 0.2);
+  padding-bottom: 0.5rem;
 }

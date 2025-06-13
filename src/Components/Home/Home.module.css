@@ -1,3 +1,10 @@
 .Home {
   text-align: center;
+  background-color: #fff;
+  min-height: 100vh;
+}
+
+/* Add smooth transitions between sections */
+.Home > * {
+  position: relative;
 }

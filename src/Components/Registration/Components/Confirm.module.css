@@ -1,3 +1,197 @@
 .Confirm {
-  padding: 4rem 0 2rem;
+  padding: 1.5rem;
+  max-width: 600px;
+  margin: 0 auto;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.title {
+  color: #333;
+  margin-bottom: 1.5rem;
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+.infoGrid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.infoItem {
+  padding: 0.5rem;
+  background-color: #f8f9fa;
+  border-radius: 4px;
+  display: flex;
+  flex-direction: column;
+}
+
+.infoItem:nth-child(4n+1),
+.infoItem:nth-child(4n+2) {
+  background-color: #fff;
+}
+
+.label {
+  color: #666;
+  font-size: 0.8rem;
+  margin-bottom: 0.2rem;
+}
+
+.value {
+  color: #333;
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+.termsContainer {
+  margin-top: 1rem;
+  padding: 0.75rem;
+  border-top: 1px solid #eee;
+}
+
+.checkbox {
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+  cursor: pointer;
+  font-size: 0.9rem;
+}
+
+.termsLink {
+  color: #007bff;
+  text-decoration: underline;
+  cursor: pointer;
+  margin-left: 0.2rem;
+}
+
+.termsLink:hover {
+  color: #0056b3;
+}
+
+.termsModal {
+  background: white;
+  border-radius: 8px;
+  overflow: hidden;
+  position: relative;
+}
+
+.closeButton {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  color: #666;
+  cursor: pointer;
+  padding: 0;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  transition: all 0.2s ease;
+  z-index: 10;
+}
+
+.closeButton:hover {
+  background-color: #f0f0f0;
+  color: #333;
+}
+
+.termsContent {
+  padding: 3rem;
+  line-height: 1.5;
+  color: #333;
+}
+
+.termsContent h4 {
+  margin-top: 0;
+  margin-bottom: 0.8rem;
+  color: #2c3e50;
+  font-size: 1.2rem;
+}
+
+.termsContent p {
+  margin-bottom: 1rem;
+  font-size: 0.95rem;
+}
+
+.termsContent p:last-child {
+  margin-bottom: 0;
+}
+
+@media (max-width: 768px) {
+  .closeButton {
+    top: 0.5rem;
+    right: 0.5rem;
+    font-size: 1.3rem;
+    width: 25px;
+    height: 25px;
+  }
+  
+  .termsContent {
+    padding: 1rem;
+    font-size: 0.9rem;
+  }
+  
+  .termsContent h4 {
+    font-size: 1.1rem;
+    margin-bottom: 0.6rem;
+  }
+  
+  .termsContent p {
+    font-size: 0.85rem;
+    margin-bottom: 0.8rem;
+  }
+}
+
+.buttonContainer {
+  display: flex;
+  gap: 0.75rem;
+  margin-top: 1.5rem;
+  justify-content: center;
+}
+
+.button {
+  padding: 0.6rem 1.5rem;
+  border: none;
+  border-radius: 4px;
+  font-weight: 500;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.primaryButton {
+  background-color: #007bff;
+  color: white;
+}
+
+.primaryButton:hover {
+  background-color: #0056b3;
+}
+
+.secondaryButton {
+  background-color: #6c757d;
+  color: white;
+}
+
+.secondaryButton:hover {
+  background-color: #5a6268;
+}
+
+@media (max-width: 600px) {
+  .infoGrid {
+    grid-template-columns: 1fr;
+  }
+  
+  .Confirm {
+    padding: 1rem;
+    margin: 0 0.5rem;
+  }
 }

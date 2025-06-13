@@ -1,7 +1,7 @@
 .Header {
   background-color: black; /* fallback color */
   background-color: rgba(0, 194, 219, 1);
-  background-image: url(../assets/images/newStocken.jpg);
+  background-image: url(../assets/images/Stocken2023_1.jpg);
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -36,62 +36,25 @@
 
 .anmalanDiv {
   margin: auto 0 0 0;
-}
-
-.AnmalanButton {
-  display: inline-block;
-  padding: 0.7rem 3rem;
-  background-color: rgba(0, 194, 219, 1);
-  color: white;
-  font-size: 2.3rem;
-  height: 40px;
-  width: 300px;
-  max-width: 40%;
-  border: none;
-  border-radius: 10px;
-  transition: 400ms 200ms;
-  font-weight: 100;
-}
-
-.AnmalanButton:hover {
-  background-color: rgba(0, 194, 219, 0.6);
-  transition: 200ms 50ms;
-}
-
-.AnmalanButtonClosed {
-  display: inline-block;
-  padding: 0.7rem 3rem;
-  background-color: rgba(0, 194, 219, 0.6);
-  text-decoration: line-through;
-  color: white;
-  font-size: 2.3rem;
-  height: 40px;
-  width: 300px;
-  max-width: 40%;
-  border: none;
-  border-radius: 10px;
-  transition: 400ms 200ms;
-  font-weight: 100;
-}
-
-@media (max-width: 600px) {
-  .AnmalanButton {
-    font-size: 1.8rem;
-    max-width: 65%;
-    font-weight: 300;
-  }
-  .AnmalanButtonClosed {
-    font-size: 1.8rem;
-    max-width: 65%;
-    font-weight: 300;
-  }
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+  gap: 16px;
 }
 
 .H1 {
   font-size: 4rem;
   color: white;
   font-weight: 300;
+  margin-top: 5rem;
+  font-size: 3rem;
+  font-weight: 400;
+  margin: 2rem 0;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
+
 @media (max-width: 600px) {
   .H1 {
     margin-top: 5rem;
@@ -114,7 +77,6 @@
     font-weight: 500;
     margin-bottom: 0;
   }
-  
 }
 
 .H4 {
@@ -122,13 +84,11 @@
   font-weight: 300;
   margin-top: 1rem;
   font-size: 2rem;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
 }
 
 @media (max-width: 600px) {
   .H4 {
-    color: white;
-    font-weight: 400;
-    margin-top: 1rem;
-    font-size: 2rem;
+    font-size: 1.5rem;
   }
 }
